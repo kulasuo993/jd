@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script src="../js/jquery-3.6.3.min.js"></script>
+<!-- <script>
+    var obj = {
+        name : 1,
+        age : 12
+    }
+    console.log(obj)
+    console.log(obj.hasOwnProperty())
+    console.log(obj.hasOwnProperty('name'))
+    console.log(obj.hasOwnProperty('run'))
+    console.log(obj.hasOwnProperty('hasOwnProperty'))
+    console.log(obj.__proto__)
+    console.log(obj.__proto__.__proto__)
+</script> -->
+<!-- <script>
+    function fn(){
+        console.log('fn')
+    }
+    console.dir(fn)
+    console.log(fn)
+</script> -->
+<!-- <script>
+    function Person(name,age){
+        this.name = name
+        this.age = age
+    }
+    Person.prototype.say = function(){
+        console.log('hello')
+    }
+    function Student(name,age,classname){
+        this.name = name
+        this.age = age
+        this.classname = classname
+    }
+    Student.prototype.say = function(){
+        console.log('sing')
+    }
+    let p1 = new Person('xiaoming',13)
+    console.log(p1)
+    p1.say()
+
+    let s1 = new Student('xiaohong',23,'五年级')
+    s1.say()
+    console.log(s1  )
+</script> -->
+
+<!-- 原型继承 -->
+<!-- <script>
+    function Person(name,age,id,hobby){
+        this.name = name
+        this.age = age
+        this.id = id
+        this.hobby = ['唱歌','看书']
+    }
+    Person.prototype.say = function(){
+        console.log('hello')
+    }
+    function Student(name,age,classname){
+        this.name = name
+        this.age = age
+        this.classname = classname
+    }
+    
+    Student.prototype.say = function(){
+        console.log('word')
+    }
+    let s = new Student()
+    s.say()
+    // Student.prototype = Person.prototype
+    Student.prototype = new Person()
+    Student.prototype.constructor = Student
+    let s1 = new Student('xiaohong',13,111)
+    let s2 = new Student('xiaolan',14,222)
+    let p1 = new Person('xiaoming',13,1111)
+    s1.say()
+    s2.say()
+    console.log(s1)
+    console.log(s1.hobby)
+    s1.hobby[0] = '跳舞'
+    console.log(s1.hobby)
+    console.log(s2)
+    console.log(s2.hobby)
+    console.log(p1.hobby)
+</script> -->
+
+<!-- 组合继承 -->
+<!-- <script>
+    function Person(name,age,id){
+        this.name = name
+        this.age = age
+        this.id = id
+        console.log('我执行了')
+    }
+    Person.prototype.say = function(){
+        console.log('hello')
+    }
+    function Student(name,age,id,classname){
+        Person.call(this,name,age,id)
+        this.classname = classname
+    }
+    Student.prototype.say = function(){
+        console.log('Student')
+    }
+    Student.prototype = new Person()
+    Student.prototype.constructor = Student
+
+    let s1 = new Student('xiaohong',13,111,222)
+    s1.say()
+    console.log(s1)
+
+
+// 实验
+//     function Student(name){
+//    this.name = name
+//    console.log(this)
+//     }
+//     let s1 = new Student('xiaohong')
+//     console.log(s1)
+</script> -->
+
+<!-- 寄生组合继承 -->
+<!-- <script>
+    // Object.create 创建新对象的方法,给新对象指定一个原型对象
+    let obj = {
+        name:1,
+        age:22
+    }
+    //let p1 = Object.create(null)
+    let p1 = Object.create(obj)
+    console.log(p1)
+</script> -->
+
+<script>
+    function Person(name,age){
+        this.name = name
+        this.age = age
+    }
+    Person.prototype.say = function(){
+        console.log(111)
+    }
+    function Student(name,age,classname){
+        Person.call(this,name,age)
+        this.classname = classname
+    }
+    Student.prototype = Object.create(Person.prototype)
+    Student.prototype.constructor = Student
+
+    let s1 = new Student('xiaohong' ,13 ,111)
+    s1.say()
+    console.log(s1)
+</script>
+</html>
