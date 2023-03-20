@@ -1,0 +1,1396 @@
+.inner{
+    width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+    position:relative;
+    
+}
+
+/* 导航栏 */
+.header{
+    width:100%;
+    height: 224px;
+    position: fixed;
+    top:0;
+    left:0;
+    right:0;
+    margin: 0 auto;
+    z-index: 10;
+}
+
+/* 导航栏背景图 */
+.header .top{
+    width: 1920px;
+    height: 224px;
+    background: url("../img/daohang.png") no-repeat;
+    background-position: center; 
+}
+
+/* 导航栏logo */
+.header .top .logo{
+    background: url("../img/logo.png") no-repeat;
+    width: 144px;
+    height: 71px;
+    background-position: center;
+    position: absolute;
+    left: 220px;
+}
+
+/* 导航栏六个显示 */
+.header .top .menu{
+    display: block;
+    text-align: center;
+    font-size: 20px;
+    color: black;
+    margin-right: 380px;
+}
+.header .top .menu li{
+    display: inline-block;
+    margin-right: 18px;
+    margin-top: 20px;
+    width: 4em;
+}
+
+.header .top .menu a{
+    color: black;
+    width: 30px;
+}
+
+/* 导航栏六个块点击后添加删除属性（下房小箭头） */
+.top .menu .on::after{
+    content: '';
+    background: url("../img/top_jiantou.png") no-repeat;
+    width: 57px;
+    height: 28px;
+    margin-top: 10px;
+    margin-left: 12px;
+    display: block;
+}
+
+/* 导航栏右侧 */
+.header .yellow_right{
+    background: url("../img/yello_right.png") no-repeat;
+    height: 56px;
+    width: 371px;
+    background-position: center;
+    right: 0;
+    position: fixed;
+    top: 0;
+}
+.header .yellow_right a{
+    color: aliceblue;
+    display: inline-block;
+    margin-top: 13px;
+}
+.header .yellow_right span{
+    margin-right: 5px;
+}
+.header .yellow_right .comnict{
+    background: url(../img/four.png) no-repeat ;
+    background-size: 237px 19px;
+    background-position: 0 -2px;
+    width: 62px;
+    height: 19px;
+    display: inline-block;
+    margin-left:40px ;
+}
+.header .yellow_right .g1{
+    background: url(../img/four.png) no-repeat ;
+    background-size: 237px 19px;
+    background-position: -64px -2px;
+    width: 15px;
+    height: 19px;
+    display: inline-block;
+}
+.header .yellow_right .g2{
+    background: url(../img/four.png) no-repeat ;
+    background-size: 237px 19px;
+    background-position: -115px -2px;
+    width: 3px;
+    height: 19px;
+    display: inline-block;
+}
+.header .yellow_right .facebook{
+    background: url(../img/four.png) no-repeat ;
+    background-size: 237px 19px;
+    background-position: -94px 0;
+    width: 17px;
+    height: 19px;
+    display: inline-block;
+}
+.header .yellow_right .g2{
+    background: url(../img/four.png) no-repeat ;
+    background-size: 237px 19px;
+    background-position: -115px -2px;
+    width: 3px;
+    height: 19px;
+    display: inline-block;
+}
+.header .yellow_right .bird{
+    background: url(../img/four.png) no-repeat ;
+    background-size: 237px 19px;
+    background-position: -129px -2px;
+    width: 19px;
+    height: 19px;
+    display: inline-block;
+}
+.header .yellow_right .pt{
+    background: url(../img/four.png) no-repeat ;
+    background-size: 237px 19px;
+    background-position: -174px -2px;
+    width: 18px;
+    height: 18px;
+    display: inline-block;
+}
+.header .yellow_right .g3{
+    background: url(../img/four.png) no-repeat ;
+    background-size: 237px 19px;
+    background-position: -159px -2px;
+    width: 4px;
+    height: 18px;
+    display: inline-block;
+}
+
+.header .yellow_right .f{
+    background: url(../img/four.png) no-repeat ;
+    background-size: 237px 19px;
+    background-position: -220px -2px;
+    width: 17px;
+    height:17px;
+    display: inline-block;
+}
+
+/* 第一部分 */
+.one{
+    background: url("../img/one_01.jpg") no-repeat;
+    width: 100%;
+    height: 860px;
+    background-position: center center;
+    background-size: cover;
+    position: relative;
+    margin: 0 auto;
+}
+
+/* 第一部分标题 */
+.one .hero{
+    background: url("../img/hero.png") no-repeat;
+    width: 833px;
+    height: 287px;
+    background-size: 834px 287px;
+    position: absolute;
+    top: 429px;
+    right:20px;
+    margin: 0 auto;
+    background-position: center;
+    font-size: 0;
+}
+
+/* 第一部分'立即预约'图片按钮 */
+.one .yuyue{
+    background: url("../img/yuyue.png") no-repeat;
+    width: 238px;
+    height: 77px;
+    position: absolute;
+    top: 312px;
+    left: 500px;
+}
+
+/* 第一部分视频按钮 */
+.one .int{
+    background: url("../img/anniu.png") no-repeat;
+    width: 87px;
+    height: 87px;
+    position: absolute;
+    top: 312px;
+    left: 350px;
+    display: block;
+}
+
+/* 第一部分视频按钮点击前后的属性 */
+.onecat{
+    position: fixed;
+    /* 用于选取整个屏幕的大小 */
+    height: 950px;
+    width: 950px;
+    top: 60px;
+    left:0;
+    right:0;
+    margin: 0 auto;
+    z-index:8;
+    display: none;
+}
+.onecat .onecatx{
+    font-size: 55px;
+    color: red;
+    position: absolute;
+    right: -50px;
+    top: 200px;
+    cursor: pointer;
+}
+/* 
+#cat{
+    width: 100px;
+    height: 600px;
+    position: fixed;
+    margin-top: 250px;
+} */
+
+/* 第一部分动态的下拉箭头 */
+.one .hero .south_jiantou{
+    background: url("../img/south_jiantou.png") no-repeat;
+    width: 34px;
+    height: 48px;
+    position:absolute;
+    top: 352px;
+    right: 640px;
+    cursor: pointer;
+    /* animation: name duration timing-function delay iteration-count direction fill-mode;
+*/ 
+    animation: south_jiantou 4s linear infinite;
+} 
+@keyframes south_jiantou{
+    0%{
+        transform: translate(0px,0px);
+        opacity: 1;
+    }
+    50%{
+        transform: translate(0px,20px);
+        opacity: .8;
+    }
+    100%{
+        transform: translate(0px,40px);
+        opacity: .4;
+    }
+}
+
+/* 固定的右侧导航栏 */
+.ji{
+    position: fixed;
+    top: 10%;
+    right: 0;
+    z-index: 3;
+}
+
+/* 右侧导航栏的两个二维码背景属性 */
+.ji1{
+    background:url("../img/ji.png") no-repeat;
+    width: 195px;
+    height: 632px;
+    display:block;
+}
+.ji_box{
+    background:url("../img/ji.png") no-repeat;
+    width: 195px;
+    height: 632px;
+    display:none;
+}
+
+/* 右侧导航栏的两个二维码 */
+.ji1 .weixin{
+    background: url(../img/weixin.png);
+    width: 151px;
+    height: 151px;
+    position: absolute;
+    top: 192px;
+    right: 17px;
+}
+.ji1 .weibo{
+    background: url(../img/weibo.png);
+    width: 151px;
+    height: 151px;
+    position: absolute;
+    top:390px;
+    right: 17px;
+}
+
+/* 右侧导航栏的左侧按钮 */
+.ji_before{
+    position: absolute;
+    display: block; 
+    background: url("../img/one_left1.png") no-repeat;
+    width: 18px;
+    height: 106px;
+    top: 330px;
+    right: 195px;
+    cursor: pointer;
+}
+.ji_before1{
+    position: absolute;
+    display: block; 
+    background: url("../img/one_left.png") no-repeat;
+    width: 18px;
+    height: 106px;
+    top: 330px;
+    right: 0;
+    cursor: pointer;
+    
+}
+
+/* 右侧导航栏底部按钮 */
+.ji_after{
+    display: block;
+    background: url("../img/one_top.png") no-repeat;
+    position: absolute;
+    width: 50px;
+    height: 79px;
+    top: 632px;
+    right: 94px;
+    cursor: pointer; 
+}
+
+/* 右侧导航栏底部按钮点击添加删除属性 */
+.ji_after1{
+    display: block;
+    background: url("../img/one_top.png") no-repeat;
+    position: absolute;
+    width: 50px;
+    height: 79px;
+    top: 632px;
+    right: 94px;
+    cursor: pointer; 
+    display: none;
+}
+
+.ji_before a{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.ji_after a{
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 50px;
+    bottom: 0;
+}
+/* 只有方块能点击 */
+
+/* 第二部分 */
+.two{
+    background: url("../img/two.jpg") no-repeat;
+    width: 100%;
+    height: 773px;
+    background-position: center center;
+    background-size: cover;
+    margin: 0 auto;
+}
+
+/* 第二部分标题 */
+.two .two_biaoti{
+    background: url("../img/two_biaoti.png") no-repeat;
+    position: absolute;
+    width: 295px;
+    height: 150px;
+    top: 78px;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+}
+
+/* 第二部分信息框全部的大盒子属性 */
+.two .two_wawa{
+    background: url("../img/two_wawa.png") no-repeat;
+    background-position: center;
+    height:553px;
+    width: 1491px;
+    position:relative;
+    top: 150px;
+    margin: 0 auto;
+    margin-left: -190px;
+    list-style: none;
+    overflow: hidden;
+}
+
+/* 第二部分信息框轮播图每一个图片原本属性 */
+.two .two_wawa .two_wawa1 li{
+    display: block;
+    position:absolute;
+    top: 80px;
+    right: 550px;
+}
+
+/* 第二部分信息框轮播图每一个图片添加或删除的属性 */
+.two .two_wawa .two_wawa1 .li_on{
+    display: none;
+    position:absolute;
+    top: 80px;
+    right: 550px;
+}
+
+/* 第二部分轮播图旁边的文本大盒子 */
+.two .two_wawa .two_line{
+    position: absolute;
+    width: 385px;
+    height: 324px;
+    right: 0;
+    top: 70px;
+    left: 850px;
+    margin: 0 auto;
+}
+/* 第二部分轮播图旁边的文本上下箭头 */
+.shang{
+    font-size: 35px;
+    position: absolute;
+    cursor: pointer;
+    top: -60px;
+    right: 205px;
+    z-index: 2;
+}
+.xia1{
+    font-size: 35px;
+    cursor: pointer;
+    position: absolute;
+    top: 480px;
+    right: 340px;
+}
+
+/* 第二部分轮播图旁边的文本内容大盒子 */
+.two .two_wawa .two_line .two_wenzi{
+   width:100%; 
+   height: 345px;
+   overflow: hidden;
+}
+
+/* 第二部分轮播图旁边的文本内容添加删除属性 */
+.twowenzi{
+    display: none;
+}
+
+/* 第二部分轮播图旁边的文本内容里面的每个li属性 */
+ .two_wenzi li{
+    margin-bottom: 21px;
+    border-bottom: 1px dotted #ccc;
+    padding-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+/* 第二部分轮播图旁边的文本内容里面的每个li下面的span属性 */
+.two_wenzi li span{
+    /* display: inline-block; */
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    font-size: 20px;
+    width: 320px;
+    position: relative;
+    z-index: 2;
+    
+}
+
+/* 第二部分轮播图旁边的文本内容里面的每个li下面的em属性 */
+.two_wenzi li em{
+    /* display: inline-block;
+    width:85px; */
+    text-align: center;
+}
+
+/* 第二部分轮播图旁边的文本内容右上角的加号 */
+.two .two_wawa .two_jia{
+    background: url("../img/two_jia.png") no-repeat;
+    position: absolute;
+    width: 17px;
+    height: 18px;
+    top: 5px;
+    right: 105px;
+    cursor: pointer;
+}
+
+/* 第二部分文本框下的四个点击按钮大盒子属性 */
+.two .two_wawa .two_jiantou
+{   position: absolute;
+    top: 430px;
+    right: 150px;
+}
+
+/* 第二部分文本框下的四个点击按钮下的每一个p的样式 */
+.two .two_wawa .two_jiantou p{
+    background: url(../img/two_jiantou.png) no-repeat;
+    width: 92px;
+    height: 31px;
+    display: inline-block;
+    margin-right: 10px;
+    font-size: 18px;
+    text-indent: 10px;
+    cursor: pointer;
+}
+
+/* 第二部分轮播图下的五个方块 */
+ .two_point{
+     padding-top: 500px;
+     padding-left: 190px;
+     cursor: pointer;
+     width: 90px;
+}
+ .two_point span{
+    display: inline-block;
+    width: 9px;
+    height: 9px;
+    margin-right: 4px;
+    background: #6072ea;
+ }
+ /* 第二部分轮播图下的五个方块点击后添加删除的属性 */
+ .two_point span.on{
+    background: #ff7d6b;
+ }
+
+/* 第三部分 */
+.three{
+    background: url(../img/three.jpg) no-repeat;
+    width: 100%;
+    height: 1621px;
+    background-position: center center;
+    background-size: cover;
+    margin: 0 auto;
+}
+.three .inner{
+    width: 1200px;
+    padding-top: 40px;
+    position: relative;
+
+}
+
+/* 第三部分标题 */
+.three .inner .three_top{
+    background: url(../img/three_top.png) no-repeat;
+    width: 554px;
+    height: 95px;
+    margin: 0 auto;
+}
+
+/* 兔子加旁边的数字整个大框盒子的属性 */
+.three .inner .three_box{
+    width: 89%;
+    position: relative;
+}
+
+/* 兔子的属性 */
+.three .inner .three_box .three_tuzi{
+    background: url(../img/three_tuzi.png) no-repeat;
+    width: 161px;
+    height: 123px;
+    margin-left: 210px;
+    z-index: 2;
+    margin-top: 40px;
+    position: relative;
+}
+
+/* 兔子旁边带有文字的图片的大盒子属性 */
+.three .inner .three_nurber{
+    text-align: center;
+    margin-top: -120px;
+    margin-left: 183px;
+}
+
+/* 兔子旁边带有文字的图片里面的li属性 */
+.three .inner .three_nurber li{
+    display: inline-block;
+    margin-right: 30px;
+    font-size: 30px;
+    
+}
+
+/* 兔子旁边带有文字的图片背景的属性 */
+.three .inner  .three_nurber .nurber_zuo{
+    background:url(../img/three_zuo.png) no-repeat;
+    width: 59px;
+    height: 115px;
+    display: inline-block;
+    padding-top: 42px;
+    
+}
+.three .inner .nurber_you{
+    background: url(../img/three_you.png) no-repeat;
+    width: 63px;
+    height: 117px;
+    display: inline-block;
+    padding-top: 35px;
+}
+
+/* 第三部分解释框（预约奖励实际发放内容以解锁... */
+.three .inner .three_jieshi{
+    background: url(../img/three_jieshi.png) no-repeat;
+    width: 329px;
+    height: 37px;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+/* 第三部分进度条 gery 文本大盒子属性 */
+.three .inner .center{
+    margin-left: 165px;
+    margin-top: 10px;
+}
+
+/* gery娃娃和数字的大盒子 */
+.gery_box{
+    width: 865px;
+}
+
+/* gery图片的属性 */
+.three .inner .gery{
+    background: url(../img/gery.png) no-repeat;
+    width: 35px;
+    height: 47px;
+    background-size: 100%;
+    cursor: pointer;
+} 
+
+/* gery旁边文字的属性 */
+.three .inner .grey_nurber{
+    width: 3em;
+    color: white;
+    display: block;
+    padding-top: 20px;
+    padding-left: 45px;
+}
+
+/* gery旁边文字下面小箭头的属性 */
+.three .inner .grey_nurber::after{
+    background: url(../img/three_jiantou.png) no-repeat;
+    display: block;
+    content: "";
+    width: 7px;
+    height: 6px;
+    margin-left: 13px;
+   
+}
+
+
+/* 第三部分进度条下方箭头属性 */
+.three .inner .center::after{
+    background: url(../img/three_xiajiantou.png) no-repeat;
+    width: 12px;
+    height: 27px;
+    display: block;
+    content: "";
+    cursor: pointer;
+    margin-top: 17px;
+    margin-left: 447px;
+}
+
+/* 第三部分进度条属性 */
+.three .inner .three_bline{
+    background:url(../img/three_bline.png) no-repeat;
+    width: 865px;
+    height: 22px;
+}
+.three .inner .three_yline{
+    background: url(../img/three_yline.png);
+    width: 236px;
+    height: 25px;
+}
+
+/* 第三部分奖励栏大盒子属性*/
+.three .inner .three_jiangli{
+    width: 1150px;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+/* 第三部分奖励栏部分盒子原本属性*/
+.three .inner .three_jiangli .jiangli{
+    background: url(../img/three_jiangli1.png) no-repeat;
+    width: 163px;
+    height: 281px;
+    display: inline-block;
+    text-align: center;
+    margin-right: 25px;
+}
+
+/* 第三部分奖励栏部分盒子点击或达成条件完成后添加的属性*/
+.three .inner .three_jiangli .jiangli1{
+    background:url(../img/three_jiangli.png) no-repeat;
+    cursor: pointer;
+}
+
+/* 第三部分奖励栏部分img的属性*/
+.three .inner .three_jiangli img{
+   margin-top: 55px;
+   margin-left: 10px;
+
+}
+
+/* 第三部分奖励栏部分文本text的属性*/
+.three .inner .three_jiangli p:nth-child(2){
+    display: block;
+    margin-top: 20px;
+    line-height: 23px;
+    margin-left: 14px;
+    font-size: 15px;
+}
+.three .inner .three_jiangli p:nth-child(3){
+    display: block;
+    margin-top: 18px;
+    font-size: 20px;
+    color: white;
+}
+
+
+/* 第三部分中部的标题（03组队参赛... */
+.three .inner .three_team{
+    background: url(../img/three_team.png) no-repeat;
+    width: 554px;
+    height: 95px;
+    margin-top: 135px;
+    margin-left: 239px;
+  
+}
+
+/* 第三部分'邀请好友'图片属性 */
+.three .inner .three_friend{
+    background: url(../img/three_friend.png) no-repeat;
+    width: 238px;
+    height: 77px;
+    margin-top: 23px;
+    margin-left: 412px;
+    cursor: pointer;
+}
+
+/* 第三部分'已邀请xxx人'文本属性 */
+.three .inner .three_invit{
+    display: block;
+    margin-top: 20px;
+    margin-left: 498px;
+    font-size: 15px;
+    color: #9fa0a5; 
+}
+
+.three .inner .three_invit span{
+    display: inline-block;
+    font-size: 20px;
+    color: #5964aa;
+}
+
+/* 第三部分邀请人数达多少后的领取框大盒子属性 */
+.three .inner .last{
+    position: relative;
+}
+.three .inner .three_last:first-child{
+    background: url(../img/three_last.png) no-repeat;
+    width: 350px;
+    height: 252px;
+    top: 91px;
+    position: absolute;
+    display: inline-block;
+}
+.three .inner .three_last:nth-child(2){
+    background: url(../img/three_last.png) no-repeat;
+    width: 350px;
+    height: 252px;
+    left: 348px;
+    position: absolute;
+    display: inline-block;
+}
+.three .inner .three_last:nth-child(3){
+    background: url(../img/three_last.png) no-repeat;
+    width: 350px;
+    height: 252px;
+    left: 718px;
+    top: -100px;
+    position: absolute;
+    display: inline-block;
+}
+
+/* 第三部分邀请人数达多少后的领取框里的文本属性 */
+.three .inner .last .three_last p:nth-child(1){
+    background: url(../img/three-_yaoqing.png) no-repeat;
+    font-size: 20px;
+    margin-top: 58px;
+    margin-left: 181px;
+    height: 35px;
+    width: 114px;
+    color: #e6e7f0;
+    text-align: center;
+    
+}
+.three .inner .last .three_last p:nth-child(2){
+    font-size: 15px;
+    display: block;
+    margin-top: 18px;
+    margin-left: 190px;
+    line-height: 25px;
+    font-weight: bold;
+}
+.three .inner .last .three_last p:nth-child(3){
+    font-size: 20px;
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    margin-left: 127px;
+    position: relative;
+    z-index: 4;
+    background: url(../img/three_lingqu.png) no-repeat;
+    background-size: 100%;
+    width: 109px;
+    height: 35px;
+    text-align: center;
+}
+/* 第三部分邀请人数达多少后的'领取'文本属性 */
+.three .inner .last .three_last .three_lingqu{
+    padding-top: 3px;
+    color: #ff9600;
+    display: block;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+/* 第三部分邀请人数达多少后的领取框里面的card图片属性 */
+.three .inner  .last_1{
+    position: absolute;
+    top: 60px;
+    left: 54px;
+}
+
+/* 第三部分右下角的大娃娃 */
+.three .three_wawa{
+    background: url(../img/three_wawa.png) no-repeat;
+    width: 408px;
+    height: 905px;
+    margin-top: -700px;
+    margin-left: 1050px;
+}
+
+/* 第四部分 */
+.four{
+    background: url(../img/four.jpg) no-repeat;
+    width: 100%;
+    height: 882px;
+    background-position: center center;
+    background-size: cover;
+    margin: 0 auto;
+}
+.four .inner{
+    width: 1200px;
+    padding-top: 296px;
+    position: relative;
+    
+}
+/* 第四部分标题 */
+.four .inner .four_jiesao{
+    background: url(../img/four_jiesao.png) no-repeat;
+    width: 320px;
+    height: 150px;
+    position:absolute;
+    top: 0px;
+    right: 90px;
+}
+
+/* 第四部分大娃娃的 */
+.four_wawa{
+    position: absolute;
+    top:100px;
+}
+
+/* 第四部分点击小娃娃后大娃娃添加的第一个类 
+（<ul class="four_wawa"></ul>里面的li）
+默认样式为所有大娃娃图片的清晰度为0*/
+.four_wawa .fwawa{
+    position: absolute;
+    width: 651px;
+    height: 718px;
+    top: 20px;
+    opacity: 0;
+}
+.four_wawa .fwawa img{
+    width: 651px;
+    height: 518px;
+}
+/*第四部分点击小娃娃后大娃娃添加的第二个类  
+点击当前小娃娃图片后对应的大娃娃图片的清晰度为1 */
+.four_wawa .fwawa.active{
+    position: absolute;
+    left: -800px;
+    opacity: 1;
+}
+/* 第四部分角色信息大框 */
+.four .inner .rgt_change_role{
+    position: absolute;  
+    top: 250px;
+    right: 30px;
+    z-index: 2;
+}
+/* 小娃娃框上的上三角点击 */
+.four .inner .rgt_change_role .four_pt1before{
+    content:"";
+    display: block;
+    background: url(../img/four_shangsanjiao.png) no-repeat;
+    width: 17px;
+    height: 15px;
+    cursor: pointer;
+    margin: 0 auto;
+}
+/* 小娃娃上的下三角点击 */
+.four .inner .rgt_change_role .four_pt1after{
+    content:"";
+    display: block;
+    background: url(../img/four_xiasanjiao.png) no-repeat;
+    width: 17px;
+    height: 15px;
+    cursor: pointer;
+    margin: 0 auto;
+}
+/* 第四部分小娃娃的盒子属性定义 */
+.four .inner .rgt_change_role .four_pt1{
+    overflow: hidden;
+    height: 410px;
+    margin-bottom: 10px;   
+}
+/* 小娃娃框点击每一个小元素的添加的类（1.添加外部的背景框） */
+.four .inner .four_pt{
+    background: url(../img/four_link.png) no-repeat;
+    width: 161px;
+    height: 81px;
+}
+/* 小娃娃框点击每一个小元素的添加的类（2.设置小图片的样式） */
+.four .inner .pt1{
+    width: 150px;
+    height: 73px;
+    margin-top: 10px;
+    margin-left: 15px;
+} 
+
+/* 第四部分娃娃的能力具体介绍框属性定义 */
+.four .inner .other_info{
+    position: absolute;
+    top:150px;
+    left: 576px;
+    width: 330px;
+}
+.four .inner .four_king{
+    background: url(../img/four_king.png) no-repeat;
+    width: 330px;
+    height: 88px;
+}
+.four .inner .jindutiao_box{
+    margin-top: 50px;
+    margin-left: 50px;
+}
+/* 第四部分进度条的属性 */
+.four .inner  .jindutiao_box .jindutiao{
+    width: 222px;
+    height: 6px;
+    border: 2px solid #a8c8ff;
+    margin-bottom: 10px; 
+}
+
+.four .inner  .jindutiao1{
+    background-color: #a8c8ff;
+    width: 222px;
+    height: 6px;
+
+}
+/* 第四部分娃娃的能力具体介绍text文本框 */
+.four .inner .jindutiao p:nth-child(2){
+    margin-left: 230px;
+    margin-top: -11px;
+    font-size: 10px;
+}
+.four .inner .jindutiao p:nth-child(3){
+    margin-left: -38px;
+    margin-top: -18px;
+    font-size: 10px;
+}
+
+/* 进度条左边文字旁边的小方块 */
+.four .inner .jindutiao p:nth-child(3)::after{
+    display:block;
+    content: "";
+    background: url(../img/four_dian.png) no-repeat;
+    width: 7px;
+    height: 7px;
+    margin-left: -16px;
+    margin-top: -10px; 
+}
+
+
+/* 第四部分进度条下的角色技能框  */
+.four .inner .nengli_box{
+    position: relative;
+}
+/* 角色名字前后的两个小图标 */
+.four .inner .nengli p:nth-child(1)::before{
+    display: block;
+    content: "";
+    background: url(../img/star.png) no-repeat;
+    width: 18px;
+    height: 18px;
+    margin-top: 5px;
+    position: absolute;
+    left: -20px;
+}
+.four .inner .nengli p:nth-child(1)::after{
+    display: block;
+    content: "";
+    background: url(../img/four_line.png) no-repeat;
+    width: 8px;
+    height: 2px;
+    margin-top: 5px;
+    position: absolute;
+}
+
+.four .inner .nengli:nth-child(1){
+    margin-top: 20px;
+}
+.four .inner .nengli:nth-child(2){
+    margin-top: -10px;
+}
+.four .inner .nengli:nth-child(3){
+    margin-top: -10px;
+}
+.four .inner .nengli p:nth-child(1){
+    display: block;
+   margin-top: 32px;
+    font-size: 23px;
+    position: relative;
+}
+.four .inner .nengli:nth-child(2) p::before,.four .inner .nengli:nth-child(3) p::before{
+    display: none;
+}
+
+.four .inner .nengli p:nth-child(2){
+    display: block;
+    margin-top: 12px;
+    width: 410px;
+}
+
+/* 第四部分角色技能框背景定义 */
+.four .inner .jineng1{
+    background: url(../img/four_liubiannxing.png) no-repeat;
+    width: 61px;
+    height: 70px;
+    position: absolute;
+    top: 100px;
+    left: -77px;
+}
+
+.four .inner .jineng2{
+    background: url(../img/four_liubiannxing.png) no-repeat;
+    width: 61px;
+    height: 70px;
+    position: absolute;
+    top: 180px;
+    left: -77px;
+}
+/* 技能框旁边的小图片 */
+.four .inner .jineng1::after{
+    display: block;
+    content: "";
+    background: url(../img/four_sanjiaoxing.png) no-repeat;
+    width: 15px;
+    height: 18px;
+    margin-top: -33px;
+    margin-left: -20px;
+    cursor: pointer;
+}
+.four .inner .jineng2::after{
+    display: block;
+    content: "";
+    background: url(../img/four_sanjiaoxing.png) no-repeat;
+    width: 15px;
+    height: 18px;
+    margin-top: -45px;
+    margin-left: -20px;
+    cursor: pointer;
+}
+/* 大娃娃旁边左右两个点击按钮 */
+.four .inner .four_right{
+    background: url(../img/four_right.png) no-repeat;
+    width: 84px;
+    height: 21px;
+    position: absolute;
+    top: 323px;
+    left: 473px;
+    cursor: pointer;
+}
+.four .inner .four_left{
+    background: url(../img/four_left.png) no-repeat;
+    width: 86px;
+    height: 21px;
+    position: absolute;
+    top: 323px;
+    left: -35px;
+    cursor: pointer;
+}
+
+/* 第五部分 */
+ .five{
+    background: url(../img/five.jpg) no-repeat;
+    width: 100%;
+    height: 952px;
+    margin-top: -7px;
+    background-position: center center;
+    background-size: cover;
+    margin: 0 auto;
+ }
+ .five .inner{
+    width: 1200px;
+    padding-top: 70px;
+ }
+
+/* 第五部分标题 */
+ .five .inner .top_5{
+    background: url(../img/five_top.png) no-repeat;
+    width: 319px;
+    height: 150px;
+    margin-left: 434px;
+    
+ }
+ /* 第五部分轮播图背景定义 */
+ .five .inner .box_51{
+    background: url(../img/five_body.png) no-repeat;
+    width: 1025px;
+    height: 548px; 
+    margin: 0 auto; 
+    list-style: none;
+    overflow: hidden;
+ }
+ /* 第五部分轮播图图片的属性 */
+ .five .inner .box_51 .box_5 .five_li{
+    display: block;
+    margin-top: 55px;
+    margin-left: 60px;
+ }
+  /* 第五部分轮播图图片点击添加或删除的属性 */
+ .five .inner .box_51 .box_5 .five_li1{
+    display: none;
+    margin-top: 55px;
+    margin-left: 60px;
+  }
+  /* 第五部分轮播图左右两个按钮 */
+ .five .inner .five_right{
+    background: url(../img/five_right.png) no-repeat;
+    width: 84px;
+    height: 21px;
+    position: absolute;
+    right: -80px;
+    top: 480px;
+    cursor: pointer;
+ }
+ .five .inner .five_left{
+    background: url(../img/five_left.png) no-repeat;
+    width: 86px;
+    height: 21px;
+    position: absolute;
+    top: 480px;
+    left: -80px;
+    cursor: pointer;
+    
+ }
+ /* 第五部分轮播图下方的五个小方块 */
+ .five .inner .five_point{
+    margin:20px auto;
+    text-align: center;
+}
+.five .inner .five_point span{
+    display: inline-block;
+    width: 9px;
+    height: 9px;
+    margin-right: 4px;
+    background: #6072ea;
+    cursor: pointer;
+    
+ }
+  /* 第五部分轮播图下方的五个小方块点击添加或删除的属性 */
+ .five .inner .five_point .on{
+    background: #ff7d6b;
+ }
+
+ .five .inner .five_point span:hover{
+    background-color: #ff7d6b;
+ }
+ 
+ /* 第六部分 */
+ .six{
+    width: 100%;
+    height: 304px;
+    background-color: black;
+    background-position: center center;
+    background-size: cover;
+    margin: 0 auto;
+ }
+ /* 第六部分猫猫图片 */
+ .six .inner .cat{
+    background: url(../img/cat.png) no-repeat;
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: 70px;
+    left: 70px;
+ }
+ /* 第六部分文字部分的属性 */
+ .six .inner .last{
+    color: rgba(255, 255, 255, .5);
+    padding-top: 47px;
+    padding-left: 336px;
+    font-size: 15px;
+    line-height: 30px;
+ }
+ .six .inner .last a{
+    color: rgba(255, 255, 255, .5);
+ }
+ .six .inner .last a:hover{
+    color: red;
+ }
+ 
+/* 点击预约按钮显示的预约框的属性 */
+ .box{
+    position: fixed;
+    /* 用于选取整个屏幕的大小 */
+    height: 100%;
+    width: 100%;
+    background: rgba(0,0,0,.5);
+    top:0;
+    left:0;
+    right:0;
+    margin: 0 auto;
+    z-index:4;
+    display: none;
+    
+}
+.box_yuyue{
+    background-color: red;
+    width: 1080px;
+    height: 360px;
+    position: absolute;
+    top: 280px;
+    left: 440px;
+    
+}
+.top1 {
+  
+   padding-top: 30px;
+   padding-left: 50px;
+}
+.top1 span{
+    font-size: 25px;
+    margin-right: 30px;
+}
+.box1{
+    position: absolute;
+    top: 100px;
+    left: 150px;
+
+}  
+.t1{
+    cursor: pointer;
+   
+}
+#yuyue_del{
+   position: absolute;
+   right: 0;
+   top:0;
+   font-size: 50px;
+   cursor: pointer;
+}
+.top1 .gang::before{
+    content: '';
+    position: absolute;
+    bottom: 334px;
+    width: 74px;
+    height: 14px;
+    background: skyblue;
+    border-radius: 2px;
+}
+#nb{
+    width: 200px;
+    height: 40px;
+}
+.nb1{
+    width: 400px;
+    height: 35px;
+}
+#nb2,#nb3{
+    width: 604px;
+    height: 35px;
+}
+#nb4{
+    display: none;
+}
+
+.password,.password1{
+    position: relative;
+    width: 280px;
+    height: 60px;
+    top: 20px;
+   }
+   
+ 
+   
+    .fa-eye-slash,.fa-eye-slash1{
+        position: absolute;
+        left:570px;
+        top:8px;
+        font-size: 20px;
+        cursor: pointer;
+    margin-top: 2px;
+    margin-left: 7px;
+    width: 24px;
+    height: 20px;
+    background-image: url(../img/e2.png);
+    background-repeat: no-repeat;
+    background-size: 24px 17px;
+   }
+   .fa-eye,.fa-eye1{
+    position: absolute;
+    left:570px;
+    top:8px;
+    font-size: 20px;
+    cursor: pointer;
+    margin-top: 2px;
+    width: 24px;
+    margin-left: 7px;
+    height: 20px;
+    background-image: url(../img/e1.png);
+    background-repeat: no-repeat;
+    background-size: 24px 17px;
+   
+   }
+
+
+#nb2,.fa-eye-slash{
+    float: left;
+}
+
+.biaoqian {
+    text-decoration: none;
+    color: blue;
+}
+#t3,#t4{
+    background-color: skyblue;
+    width: 700px;
+    height: 50px;
+    text-align: center;
+    margin-top: 20px;
+}
+#t3 span,#t4 span{
+    font-size: 25px;
+    display: block;
+    padding-top: 8px;
+    cursor: pointer;
+}
+
+
+.box2{
+    position: absolute;
+    top: 100px;
+    left: 150px;
+    display: none;
+    
+}
+
+.appear{
+    width: 150px;
+    height: 100px;
+    background-color: pink;
+    position: absolute;
+    text-align: center;
+    margin:-100px 300px auto;
+    display: none;
+}
+.appear span{
+    display: block;
+    font-size: 25px;
+    margin-top: 20px;
+}
